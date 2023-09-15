@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include <unistd.h>
 #include<stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -10,7 +11,7 @@ int main(int argc, char *argv[]) {
 	int i, j=3;
 	printf("nElem=%d\n", nElem);
 	args_1[0] = argv[1];
-	args_2[0] = argv[2]
+	args_2[0] = argv[2];
 	
 	for(i=1; i<=nElem; i++) {
 		args_1[i] = argv[j];

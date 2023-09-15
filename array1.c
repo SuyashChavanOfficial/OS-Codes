@@ -1,19 +1,19 @@
-#include <iostream>
 #include <sys/types.h>
 #include <unistd.h>
+#include <stdio.h>
 
 int main(int argc, char *argv[]) {
 	int nElem = argc - 2;
-	char *args[ nElem + 1 ];
+	char *args[ nElem + 2 ];
 	
 	int i,j=2;
 	printf("nElem=%d\n", nElem);
 	
 	args[0] = argv[1];
 	
-	for(i=0; i<=nELem; i++) {
+	for(i=1; i<=nElem; i++) {
 		args[i] = args[j];
-		printf("argv[%d]=%5\n", j, argv[j]);
+		printf("argv[%d]=%s\n", j, argv[j]);
 		j++;
 	}
 	

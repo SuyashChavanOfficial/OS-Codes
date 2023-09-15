@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-	int nElem = arg - 1;
+	int nElem = argc - 1;
 	
 	int i, elem;
 	
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 
 	for(i=1; i<nElem; i++) {
 		elem = atoi(argv[i]);
-		print("args[%d]=%d\n", i, elem);
+		printf("args[%d]=%d\n", i, elem);
 	}
 	
 	return 0;

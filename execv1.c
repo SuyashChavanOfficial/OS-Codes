@@ -2,7 +2,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-int main() {
+int main(int argc, char *argv[]) {
 	char *args[3];
 	
 	args[0] = argv[1];
@@ -15,7 +15,7 @@ int main() {
 	
 	printf("h1\n");
 	
-	evecv(argv[1], args);
+	execv(argv[1], args);
 	
 	printf("h2\n");
 
